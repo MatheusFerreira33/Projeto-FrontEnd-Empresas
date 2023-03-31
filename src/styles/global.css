@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --color-Brand: #4200FF;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-red: #CE4646;
+    --color-green: #4BA036;
+}
+
+.buttonWhite{
+    background-color: var(--color-white);
+    border: 1px solid var(--color-Brand);
+    font-family: 'Inter',sans-serif;
+    font-size: 1rem;
+}
+
+.buttonBrand{
+    background-color: var(--color-Brand);
+    border: 1px solid var(--color-Brand);
+    color: var(--color-white);
+    font-family: 'Inter',sans-serif;
+    font-size: 1rem;
+}
+
+.buttonGreen{
+    background-color: var(--color-green);
+    border: 1px solid var(--color-green);
+    color: var(--color-white);
+    font-family: 'Inter',sans-serif;
+    font-size: 1rem;
+}
+
+.buttonRed{
+    background-color: var(--color-white);
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+    font-family: 'Inter',sans-serif;
+    font-size: 1rem;
+}
+
+.toastfySucess{
+    display: none;
+    background-color: var(--color-green);
+    border: 1px solid var(--color-green);
+    border-radius: 10px;
+    color: var(--color-white);
+    padding: 16px;
+    font-family: 'Inter',sans-serif;
+    font-size: 1rem;
+}
+
+.toastfyError{
+    display: none;
+    background-color: var(--color-red);
+    border: 1px solid var(--color-red);
+    border-radius: 10px;
+    color: var(--color-white);
+    padding: 16px;
+    font-family: 'Inter',sans-serif;
+    font-size: 1rem;
+}

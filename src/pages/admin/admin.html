@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="./modal.css">
+    <link rel="stylesheet" href="./admin.css">
+    <title>Dashboard Admin</title>
+</head>
+
+<body>
+    <header>
+        <img src="../../img/logo.svg">
+        <button class="buttonWhite admin">Logout</button>
+    </header>
+    <section name="sectionModals">
+        <div class="containerCreateDepartments" id="containerCreateDepartments">
+            <button class="toastfyError">Preencha todos os campos</button>
+            <div class="toastfySucess">Departamento criado com sucesso</div>
+            <div class="modalCreateDepartments">
+                <div class="headerModal">
+                    <button data-modal-control="containerCreateDepartments" id="closeModal">X</button>
+                </div>
+                <div class="mainModal">
+                    <form>
+                        <h1>Criar Departamentos</h1>
+                        <input type="text" value="" id="departamento" placeholder="Nome do departamento">
+                        <input type="text" value="" id="descricao" placeholder="Descrição">
+                        <select name="companies" id="companies">
+                            <option value="selecionar_empresas">Selecionar Empresas</option>
+                            <option value="Skina Lanches">Skina Lanches</option>
+                            <option value="Gela Guela">Gela Guela</option>
+                            <option value="Mercado Kenzie">Mercado Kenzie</option>
+                            <option value="Gortifruti da Terra">Gortifruti da Terra</option>
+                            <option value="Tecidos Dona Florinda">Tecidos Dona Florinda</option>
+                            <option value="Malhas Alberto">Malhas Alberto</option>
+                            <option value="DevModa">DevModa</option>
+                            <option value="Edna Moda">Edna Moda</option>
+                            <option value="KenzieX">KenzieX</option>
+                            <option value="Evolution Tech">Evolution Tech</option>
+                            <option value="Boacharria">Boacharria</option>
+                            <option value="Offcina">Offcina</option>
+                            <option value="Nerd lab">Nerd lab</option>
+                            <option value="Chipset manutenções">Chipset manutenções</option>
+                            <option value="Mercado Popular">Mercado Popular</option>
+                            <option value="Atacadão Kenzie">Atacadão Kenzie</option>
+                        </select>
+                        <button type="submit" class="buttonBrand createDepartments" id="createDepartments">Criar o
+                            departamento</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="containerEditDepartments" id="containerEditDepartments">
+            <div class="modalEditDepartments">
+                <div class="headerModal">
+                    <button data-modal-control="containerEditDepartments">X</button>
+                </div>
+                <div class="mainModal">
+                    <form>
+                        <h1>Editar Departamento</h1>
+                        <textarea value="" id="descriptionDepartments"></textarea>
+                        <button type="submit" id="editInfo" class="buttonBrand salveAlt">Salvar alterações</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="containerDeleteDepartments" id="containerDeleteDepartments">
+            <div class="modalDeleteDepartments">
+                <div class="headerModal">
+                    <button data-modal-control="containerDeleteDepartments">X</button>
+                </div>
+                <div class="mainModal">
+                    <p>
+
+                    </p>
+                    <button class="buttonGreen buttonConfirmed" id="buttonConfirmed">Confirmar</button>
+                </div>
+            </div>
+        </div>
+        <div class="containerViewDepartments" id="containerViewDepartments">
+            <div class="modalViewDepartments">
+                <div class="headerModal">
+                    <div class="ErrorView">Selecione um funcionario para contratar</div>
+                    <div class="SucessoView">Funcionario contratado com sucesso</div>
+                    <button data-modal-control="containerViewDepartments">X</button>
+                </div>
+                <div class="mainModal">
+                    <div class="tituloDepartments">
+                        <h1></h1>
+                    </div>
+                    <div class="boxMain">
+                        <div class="box1"></div>
+                        <div class="box2"></div>
+                    </div>
+                </div>
+                <ul class="listemploess">        
+                </ul>
+            </div>
+        </div>
+        <div class="containerEditUser" id="containerEditUser">
+            <div class="modalEditUser">
+                <div class="headerModal">
+                    <button data-modal-control="containerEditUser" id="containerEditUser">X</button>
+                </div>
+                <div class="mainModal">
+                    <form>
+                        <h1>Editar Usuário</h1>
+                        <select name="modalidade" id="modalidade">
+                            <option value="selecionar modalidade de trabalho">Selecionar modalidade de trabalho</option>
+                            <option value="home office">Home office</option>
+                            <option value="presencial">Presencial</option>
+                            <option value="hibrido">Hibrido</option>
+                        </select>
+                        <select name="nivel" id="nivel">
+                            <option value="selecionar nivel de trabalho">Selecionar nivel de trabalho</option>
+                            <option value="sênior">Sênior</option>
+                            <option value="pleno">Pleno</option>
+                            <option value="júnior">Júnior</option>
+                            <option value="estágio">Estágio</option>
+                        </select>
+                        <button type="submit" id="buttonEditUser" class="buttonBrand buttonEditUser">Editar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="containerRemoveUser" id="containerRemoveUser">
+            <div class="modalRemoveUser">
+                <div class="headerModal">
+                    <button class="buttonCloseModalRemove" data-modal-control="containerRemoveUser">X</button>
+                </div>
+                <div class="mainModal">
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="Error">Preencha todos os campos</div>
+        <div class="Sucesso">Atualizado com sucesso</div>
+        <section class="departments">
+            <div class="headerDepartments">
+                <h1>Departamentos</h1>
+                <select name="selectCompanies" id="selectCompanies">
+
+                    <option value="selecionar_empresas">Selecionar Empresas</option>
+                    <option value="Skina Lanches">Skina Lanches</option>
+                    <option value="Gela Guela">Gela Guela</option>
+                    <option value="Mercado Kenzie">Mercado Kenzie</option>
+                    <option value="Gortifruti da Terra">Gortifruti da Terra</option>
+                    <option value="Tecidos Dona Florinda">Tecidos Dona Florinda</option>
+                    <option value="Malhas Alberto">Malhas Alberto</option>
+                    <option value="DevModa">DevModa</option>
+                    <option value="Edna Moda">Edna Moda</option>
+                    <option value="KenzieX">KenzieX</option>
+                    <option value="Evolution Tech">Evolution Tech</option>
+                    <option value="Boacharria">Boacharria</option>
+                    <option value="Offcina">Offcina</option>
+                    <option value="Nerd lab">Nerd lab</option>
+                    <option value="Chipset manutenções">Chipset manutenções</option>
+                    <option value="Mercado Popular">Mercado Popular</option>
+                    <option value="Atacadão Kenzie">Atacadão Kenzie</option>
+
+                </select>
+                <button class="buttonBrand adminCriar" data-modal-control="containerCreateDepartments"><i
+                        class="fa-solid fa-plus"></i>Criar</button>
+            </div>
+            <ul class="mainDepartments">
+            </ul>
+
+        </section>
+        <section class="users">
+            <h1>Usuários cadastrados</h1>
+                <ul class="usersDepartments">                        
+                </ul>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/99ef865e02.js" crossorigin="anonymous"></script>
+    <script type="module" src="./admin.js"></script>
+</body>
+
+</html>

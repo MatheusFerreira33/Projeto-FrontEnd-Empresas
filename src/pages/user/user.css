@@ -1,0 +1,165 @@
+header{
+    width: 97%;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid;
+    gap: 50px;
+}
+
+header > .logout{
+    padding: 10px;
+    font-family: 'Inter',sans-serif;
+    width: 100px;
+    cursor: pointer;
+}
+
+main{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    padding: 16px;
+    gap: 15px;
+}
+
+main > .sucesso{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+}
+
+.containerModal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.user{
+    padding: 16px;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+}
+
+.show-containerModal{
+    display: flex;
+}
+
+
+.containerModal > .modal{
+    width: 350px;
+    height: 350px;
+    background-color: var(--color-white);
+}
+
+.containerModal > .modal > .headerModal{
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headerModal > button{
+    background-color: var(--color-white);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.containerModal > .modal > .mainModal > form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    margin-top: -35px;
+}
+.mainModal > form > input{
+    padding: 10px;
+    border: 1px solid var(--color-black);
+}
+.mainModal > form > button{
+    padding: 10px;
+    font-family: 'Inter',sans-serif;
+    cursor: pointer;
+}
+main > .editInfo{
+    width: 780px;
+    padding: 8px;
+    border: 1px solid #000;
+}
+
+main > .editInfo > .nameUser{
+    width: 98%;
+}
+
+main >.editInfo > .infoUser{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main >.editInfo > .infoUser > ul{
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    gap: 90px;
+    justify-content: flex-start;
+    margin-top: -15px;
+}
+
+main > .department{
+    width: 789px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.department > .headerDepartment{
+    width: 99%;
+    height: 50px;
+    padding: 5px;
+    background-color: var(--color-Brand);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.department > .mainDepartment{
+    width: 96%;
+    margin-top: -0px;
+    height: 300px;
+    background-color: #f8f8f8;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 16px;
+}
+
+.department > .mainDepartment > li{
+    width: 210px;
+    height: 50px;
+    padding: 5px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-Brand);
+    position: relative;
+}
+
+.department > .mainDepartment > li > h3{
+    margin-top: -0px;
+}
+.department > .mainDepartment > li > span{
+    position: absolute;
+    bottom: 0px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="./cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><img src="../../img/logo.svg" alt="logo"></li>
+            <li id="dropwn"><i class="fa-solid fa-grip-lines sizeLines"></i></li>
+            <button class="buttonWhite home desktop">Home</button>
+            <button class="buttonBrand login desktop">Login</button>
+        </ul>
+        <div class="buttons" aria-label="Cadastrar e Login">
+            <button class="buttonWhite home">Home</button>
+            <button class="buttonBrand login">Login</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="toastfyError">Email ja existe</div>
+        <div class="toastfySucess">Usuario cadastrado com sucesso</div>
+        <div class="containerRegistration">
+            <h1>Cadastrar-se</h1>
+            <form>
+                <input type="text" name="name" value=""  id="name" placeholder="Seu nome" >
+                <input type="email" name="email" value=""  id="email" placeholder="Seu e-mail" >
+                <input type="password"  name="password" value="" id="password" placeholder="Sua senha">
+                <select name="professional_level" id="professional_level">
+                    <option value="">Nivel profissional</option>
+                    <option value="sênior">Sênior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="júnior">Junior</option>
+                    <option value="estágio">Estagio</option>
+                </select>
+                <button type="submit" class="buttonBrand cadastrar" id="cadastrar">Cadastrar-se</button>
+                <button class="buttonWhite login" id="retornar">Retornar</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/99ef865e02.js" crossorigin="anonymous"></script>
+    <script type="module" src="./cadastro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,461 @@
+.containerCreateDepartments{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerCreateDepartments > .errorAdmin{
+    display: flex;
+    position: absolute;
+    top: 130px;
+    cursor: pointer;
+}
+
+.containerCreateDepartments > .Sucess{
+    display: flex;
+    position: absolute;
+    top: 50px;
+}
+
+.containerCreateDepartments > .modalCreateDepartments{
+    width: 400px;
+    height: 400px;
+    background-color: var(--color-white);
+}
+
+
+
+.modalCreateDepartments > .headerModal{
+    width: 97%;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalCreateDepartments > .headerModal > button{
+    background-color: var(--color-white);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.modalCreateDepartments > .mainModal{
+    width: 99%;
+    margin: auto;
+    height: 350px;
+}
+
+.modalCreateDepartments > .mainModal > form{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 10px;
+    margin-top: -40px;
+}
+
+.modalCreateDepartments > .mainModal > form > input{
+   padding: 16px;
+   font-family: 'Inter'sans-serif;
+}
+
+.modalCreateDepartments > .mainModal > form > select{
+    padding: 16px;
+    font-family: 'Inter',sans-serif;
+    cursor: pointer;
+}
+
+.modalCreateDepartments > .mainModal > form > .createDepartments{
+    padding: 16px;
+    cursor: pointer;
+}
+
+/*****************************************************************************/
+
+.containerEditDepartments{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerEditDepartments > .modalEditDepartments{
+    width: 350px;
+    background-color: var(--color-white);    
+}
+
+.modalEditDepartments > .headerModal{
+    width: 97%;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalEditDepartments > .headerModal > button{
+    background-color: var(--color-white);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.modalEditDepartments > .mainModal{
+    width: 99%;
+    margin: auto;
+}
+
+.modalEditDepartments > .mainModal > form{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 10px;
+}
+
+.modalEditDepartments > .mainModal > form > h1{
+    margin-top: -15px;
+}
+
+.modalEditDepartments > .mainModal > form > textarea{
+    margin-top: -15px;
+    padding: 16px;
+    height: 80px;
+    font-family: 'Inter',sans-serif;
+}
+
+.modalEditDepartments > .mainModal > form > .salveAlt{
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Inter',sans-serif;
+}
+
+
+
+/*************************************************************************************/
+
+.containerDeleteDepartments{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerDeleteDepartments > .modalDeleteDepartments{
+    width: 350px;
+    height: 250px;
+    background-color: var(--color-white);
+}
+
+.modalDeleteDepartments > .headerModal{
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.modalDeleteDepartments > .headerModal button{
+    background-color: var(--color-white);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+.modalDeleteDepartments > .mainModal{
+    padding: 16px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Inter',sans-serif;
+    font-size: 1rem;
+}
+
+.modalDeleteDepartments > .mainModal > .buttonConfirmed{
+    width: 85%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/******************************************************************************************/
+
+.containerViewDepartments{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerViewDepartments > .modalViewDepartments{
+    width: 700px;
+    height: 500px;
+    background-color: var(--color-white);
+    position: relative;
+}
+
+.modalViewDepartments > .headerModal{
+    width: 97%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalViewDepartments > .headerModal > .ErrorView{
+    display: none;
+    background-color: var(--color-red);
+    border: 1px solid var(--color-red);
+    border-radius: 10px;
+    color: var(--color-white);
+    padding: 16px;
+    font-family: 'Inter',sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    right: 175px;
+}
+
+.modalViewDepartments > .headerModal > .SucessoView{
+    display: none;
+    background-color: var(--color-green);
+    border: 1px solid var(--color-green);
+    border-radius: 10px;
+    color: var(--color-white);
+    padding: 16px;
+    font-family: 'Inter',sans-serif;
+    position: absolute;
+    font-size: 1rem;
+    right: 175px;
+}
+
+.modalViewDepartments > .headerModal > button{
+    background-color: var(--color-white);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.modalViewDepartments > .mainModal{
+    width: 95%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalViewDepartments > .mainModal > .tituloDepartments{
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: -16px;
+}
+
+.modalViewDepartments > .mainModal > .boxMain{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.modalViewDepartments > .mainModal > .boxMain > .box1{
+    width: 300px;
+    display: flex;
+    height: 50px;
+    flex-direction: column;
+}
+.modalViewDepartments > .mainModal > .boxMain > .box1 > h3{
+    margin-top: -4px;
+}
+.modalViewDepartments > .mainModal > .boxMain > .box1 > span{
+    margin-top: -10px;
+}
+
+.modalViewDepartments > .mainModal > .boxMain > .box2{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.modalViewDepartments > .mainModal > .boxMain > .box2 > select{
+    padding: 10px;
+    width: 300px;
+    margin-top: -2px;
+    font-family: 'Inter',sans-serif;
+    cursor: pointer;
+}
+
+.modalViewDepartments > .mainModal > .boxMain > .box2 > .toHide{
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.modalViewDepartments > .listemploess{
+    width: 600px;
+    display: flex;
+    overflow-x:  scroll;
+    list-style: none;
+    background-color:#F8F8F8;
+    border-color: #F8F8F8;
+    margin-left: 20px;
+    margin-top: -10px;
+    padding: 10px;
+}
+
+.modalViewDepartments > .listemploess > li{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    min-width: 250px;
+    margin-left: 15px;
+    height: 150px;
+    background-color: var(--color-white);
+    position: relative;
+}
+
+.modalViewDepartments > .listemploess > li > h3{
+    margin-top: -2px;
+}
+.modalViewDepartments > .listemploess > li > span{
+    margin-top: -10px;
+    line-height: 35px;
+}
+.modalViewDepartments > .listemploess > li > .buttonOff{
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+    width: 130px;
+    cursor: pointer;
+}
+
+.modalViewDepartments > .listemploess > li > hr{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    border-color: var(--color-Brand);
+}
+
+/************************************************************************/
+
+.containerEditUser{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerEditUser > .modalEditUser{
+    width: 400px;
+    background-color: var(--color-white);
+}
+
+.containerEditUser > .modalEditUser > .headerModal{
+    width: 95%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalEditUser > .headerModal > button{
+    border: none;
+    background-color: var(--color-white);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.containerEditUser > .modalEditUser > .mainModal > form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px;
+    gap: 15px;
+}
+
+.containerEditUser > .modalEditUser > .mainModal > form > h1{
+    margin-top: -15px;
+}
+.containerEditUser > .modalEditUser > .mainModal > form > select{
+    padding: 10px;
+    font-family: 'Inter',sans-serif;
+    cursor: pointer;
+    
+}
+
+.modalEditUser > .mainModal > form > .buttonEditUser{
+    padding: 10px;
+    font-family: 'Inter',sans-serif;
+    cursor: pointer;
+}
+
+/********************************************************************************************/
+
+.containerRemoveUser{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerRemoveUser > .modalRemoveUser{
+    width: 400px;
+    height: 200px;
+    background-color: var(--color-white);
+}
+
+.containerRemoveUser > .modalRemoveUser > .headerModal{
+    width: 97%;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalRemoveUser > .headerModal > .buttonCloseModalRemove{
+    border: none;
+    background-color: var(--color-white);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.containerRemoveUser > .modalRemoveUser > .mainModal{
+    padding: 5px;
+    text-align: center;
+}
+
+.containerRemoveUser > .modalRemoveUser > .mainModal > .buttonDeletar{
+    padding: 5px;
+    width: 250px;
+    font-size: 1rem;
+    font-family: 'Inter',sans-serif;
+    cursor: pointer;
+}
+
+.show-modal{
+    display: flex;
+}

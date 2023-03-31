@@ -1,0 +1,175 @@
+header {
+    width: 99.99%;
+    position: relative;
+}
+
+header>ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.sizeLines {
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+
+header>.buttons {
+    display: none;
+    width: 100%;
+    height: 93px;
+    justify-content: center;
+    gap: 15px;
+    border: 2px solid white;
+    box-shadow: 10px 10px 5px white;
+    box-shadow: 1px 1px 1px #000;
+    border: transparent;
+    position: absolute;
+    background-color: var(--color-white);
+    z-index: 1;
+}
+
+header>.show-buttons {
+    display: flex;
+}
+
+header>.buttons>.home {
+    padding: 10px;
+    width: 90px;
+    height: 50px;
+    color: var(--color-Brand);
+    cursor: pointer;
+}
+
+header>.buttons>.login {
+    padding: 10px;
+    width: 90px;
+    height: 50px;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+header>ul>.buttonWhite.home.desktop {
+    display: none;
+    padding: 10px;
+    width: 90px; 
+    color: var(--color-Brand);
+    cursor: pointer;
+    position: absolute;
+}
+
+header>ul>.buttonBrand.login.desktop {
+    display: none;
+    padding: 10px;
+    width: 90px;
+    color: var(--color-white);
+    cursor: pointer;
+    position: absolute;
+}
+
+/*PRINCIPAL*/
+
+main{
+    width: 100%;
+    height: 700px;
+    background-image: url("../../img/home.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > .containerRegistration{
+    width: 550px;
+    max-width: 100%;
+    height: 500px;
+    margin-top:-100px;
+    background-color: var(--color-white);
+    padding-left: 15px;
+}
+
+
+main > .containerRegistration > form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+}
+
+main > .containerRegistration > form > input{
+    padding: 16px;
+}
+
+
+main > .containerRegistration > form > select{
+    padding: 16px;
+}
+
+main > .containerRegistration > form > .cadastrar{
+    cursor: pointer;
+    padding: 16px;
+}
+main > .containerRegistration > form > .login{
+    padding: 16px;
+    color: var(--color-Brand);
+    cursor: pointer;
+}
+
+.cadastroSucesso{
+    display: flex;
+    position: absolute;
+    top: 90px;
+    z-index: 0;
+}
+.cadastroError{
+    display: flex;
+    position: absolute;
+    top: 90px;
+    z-index: 0;
+}
+
+
+
+
+@media(min-width:1024px) {
+    header{
+        border: transparent;
+    }
+
+    header>ul>.buttonBrand.login.desktop{
+        display: flex;
+        right: 210px;
+        width: 110px;
+        justify-content: center; 
+    }
+
+    header>ul>.buttonWhite.home.desktop{
+        display: flex;
+        right: 335px;
+        width: 110px;
+        justify-content: center;
+    }
+
+
+    header > .buttons{
+        display: none;
+    }
+
+    header > ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    main{
+        background-image: url("../../img/cadastro.svg");
+    }
+}
+
+@media(min-width:550px){
+    main{
+        background-image: url("../../img/cadastro.svg");
+    }
+}
